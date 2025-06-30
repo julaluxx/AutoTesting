@@ -1,0 +1,32 @@
+{
+  "name": "autotesting",
+  "version": "1.0.0",
+  "description": "I just learn how to do Automate testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:dev": "cross-env ENV=dev npx playwright test --ui",
+    "test:prod": "cross-env ENV=prod npx playwright test --ui",
+    "test:stg": "cross-env ENV=staging npx playwright test --ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julaluxx/AutoTesting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julaluxx/AutoTesting/issues"
+  },
+  "homepage": "https://github.com/julaluxx/AutoTesting#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0"
+  }
+}
